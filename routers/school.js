@@ -41,11 +41,6 @@ router.get('/school/student', async (req, res) => {
                     "foreignField": "schoolId",
                     "as": "std_info"
                 }
-            },
-            {
-                '$sort':{
-                    '_id':-1
-                }
             }
         ]).exec();
 
